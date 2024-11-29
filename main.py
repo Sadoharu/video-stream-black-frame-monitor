@@ -35,8 +35,6 @@ def main():
     base_dir = os.path.dirname(os.path.abspath(sys.executable)) if getattr(sys, 'frozen', False) else os.path.dirname(os.path.abspath(__file__))
     config_path = os.path.join(base_dir, 'config.ini')
     
-    # Шлях до ffmpeg.exe
-    ffmpeg_path = os.path.join(base_dir, 'ffmpeg.exe')
 
     # Налаштування логування з підтримкою UTF-8
     stdout_handler = logging.StreamHandler(stream=io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8'))
